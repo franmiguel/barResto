@@ -1,0 +1,84 @@
+.imagen {
+    width: 300px;
+}
+
+.container-fluid {
+    background-image: url(../img/background5.jpeg);
+    color: blanchedalmond;
+}
+
+.textoClarito {
+    color: blanchedalmond;
+}
+
+#carouselExampleInterval {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.badge {
+    font-size: large;
+    margin-bottom: 20px;
+    color: blanchedalmond;
+}
+
+p {
+    font-weight: bold;
+    font-size: large;
+}
+
+#menuDiv {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#divPromociones {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.row {
+    text-align: center;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+#idContacto {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#idContacto {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.text-center {
+    text-align: center !important;
+}
