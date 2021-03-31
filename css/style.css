@@ -7,20 +7,12 @@
     color: rgb(0, 0, 0);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-
-#carouselExampleInterval {
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
 .badge {
     font-size: large;
     font-weight: 700;
     margin-bottom: 20px;
     color: rgb(42, 42, 93);
 }
-
 p {
     font-weight: bold;
     font-size: large;
@@ -35,19 +27,14 @@ p {
 }
 
 .titulo {
-    background-color:#d4d5d6;
-     /*rgba(248, 237, 237, 0.993);*/
-    
+    background-color:#d4d5d6;    
 }
 .footer {
     background-color: #ffffff;
-    /*rgba(231, 221, 221, 0.527);*/
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
-
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -55,7 +42,6 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-
 li {
     float: left;
 }
@@ -76,7 +62,6 @@ li a:hover{
 .text-center {
     text-align: center !important;
 }
-
 .col-4 {
     padding: 10px;
     border-radius: 5%;
@@ -89,8 +74,7 @@ li a:hover{
     box-shadow: 0px 20px 50px grey;
     padding: 30px 10px;
 }
-
-/*ESTO ES DEL CAROUSEL DE CODEPEN*/
+/*TODO ESTO ES DEL CAROUSEL DE CODEPEN*/
 .pic-ctn {
   width: 100vw;
   height: 200px;
