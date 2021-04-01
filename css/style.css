@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .imagen{
     width: 300px;
     border-radius: 4%;
@@ -34,6 +39,7 @@ p {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin-top:2%;
 }
 ul {
     list-style-type: none;
@@ -69,12 +75,14 @@ li a:hover{
     margin-top: 5px;
     margin-bottom: 45px;
 }
+/**
 .redes{
     border-radius: 5%;
     box-shadow: 0px 20px 50px grey;
     padding: 30px 10px;
-}
+}**/
 /*TODO ESTO ES DEL CAROUSEL DE CODEPEN*/
+
 .pic-ctn {
   width: 100vw;
   height: 200px;
@@ -105,11 +113,10 @@ li a:hover{
 
 .pic-ctn {
   position: relative;
-  width: 100vw;
+  width: 98%;
   height: 300px;
   /*margin-top: 15vh;*/
 }
-
 .pic-ctn > img {
   position: absolute;
   top: 0;
