@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #E5E5E5;
+  background-color: #FFF0CC42;
 }
 
 .imagen{
@@ -37,7 +37,7 @@ p {
   color: #ffffff;
 }
 footer{
-  background-color: #E5E5E5;
+  background-color: #FFF0CC42;
 }
 .footer {    
     display: flex;
@@ -101,23 +101,17 @@ li a:hover{
 
 @keyframes display {
   0% {
-    transform: translateX(200px);
+    transform: translateX(100px);
     opacity: 0;
   }
-  10% {
+  
+  50% {
     transform: translateX(0);
     opacity: 1;
   }
-  20% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  30% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
+  
   100% {
-    transform: translateX(-200px);
+    transform: translateX(-100px);
     opacity: 0;
   }
 }
