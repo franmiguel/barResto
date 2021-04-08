@@ -55,6 +55,8 @@ footer{
 }
 li {
     float: left;
+    list-style-type: none;
+    text-align: center;
 }
 
 li a {
@@ -86,6 +88,20 @@ li a:hover{
   background-color:#14213D;
   color: #ffffff;
 }
+ul{
+  display: flex;
+  flex-direction: column;
+}
+ul li{
+  padding: 1%;
+}
+label input{
+  margin-left: 10px;
+}
+.submit{
+  text-align: center;
+}
+
 /**
 .redes{
     border-radius: 5%;
