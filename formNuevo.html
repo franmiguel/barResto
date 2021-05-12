@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formNuevo.css">
+    <title>Registrate</title>
+</head>
+<body>
+    <header id="burgerCompany">
+            <nav>
+                <ul class="navbar">
+                    <li id="logo"><a href="/index.html">Burger Company</a></li>
+                    <li><a href="/index.html">Menú</a></li>
+                    <li><a href="/index.html">Promociones</a></li>
+                    <li><a href="/index.html">Contacto</a></li>
+                    <li><a href="/formulario.html">Crear cuenta</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="main">
+        <form action="" method="POST" id="formulario">
+            <h2>Crear cuenta</h2>
+            <section class="form-section">
+                <div class="form-group">
+                    <label for="mail">Mail *</label>
+                    <input type="email" name="mail" id="mail" class="form-input" placeholder="Ingresa tu mail" required> 
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña *</label>
+                    <input type="password" name="password" id="password" class="form-input" placeholder="Defini tu contraseña" required>
+                </div>
+                <h5>*Requerido</h5>
+            </section>
+            <section class="form-section">
+                    <h3>Queremos conocerte más</h3>                
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Género</label>
+                    <label for="gender" class="form-radio"><input type="radio" name="gender" id="gender" value="femenine">Femenino</label>
+                    
+                    <label for="gender"class="form-radio"><input type="radio" name="gender" id="gender" value="masculine">Masculino</label>
+                    
+                    <label for="gender"class="form-radio"><input type="radio" name="gender" id="gender" value="nonbinary">No binario</label>
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Cumpleaños</label>
+                    <input type="date" name="birthday" id="birthday" class="form-input">
+                </div> 
+            </section>
+            <section class="form-section">
+                <button type="submit" class="button">Registrarse</button>
+            </section>   
+        </form>
+    </main> 
+</body>
+</html>
