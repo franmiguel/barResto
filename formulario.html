@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/validate.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="formulario">
-        <form action="" method="post" class="formulario">
-            
-                <ul>
-                    <li><label for="nombre">Nombre: <input type="text" name="nombre" size="40"></label></li>
-                    <li><label for="apellido">Apellido: <input type="text" name="apellido" size="40"></label></li>
-                    <li><label for="genero">Género:
-            
-                        <input type="radio" name="hm" value="h"> Hombre
-                        <input type="radio" name="hm" value="m"> Mujer
-                        <input type="radio" name="hm" value="o"> Otro
-                    </label></li>
-                    <li><label for="mail">Mail:<input type="mail" name="mail" size="45"></label></li>
-                    <li><label for="password">Contraseña:<input type="password" name="password"></label></li>
-                    <li><label>Cumpleaños:<input type="date" name="nacimiento"></label>
-                    </li>
-                    </ul>
-        
-                    <div class="submit">
-                          <button type="submit" value="Enviar">Enviar</button>
-                          <button type="reset" value="Borrar">Borrar</button>
-                    </div>
-            
-                  
+      <form
+        name="myForm"
+        action="/"
+        method="post"
+        method="GET"
+        class="formulario"
+        onsubmit="return validateForm()"
+      >
+        <ul>
+          <li>
+            <label for="nombre"
+              >Nombre:
+              <input type="text" name="nombre" id="nombre" size="40" required
+            /></label>
+          </li>
+          <li>
+            <label for="apellido"
+              >Apellido:
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                size="40"
+                required
+            /></label>
+          </li>
+          <li>
+            <label for="genero">
+              Género:
 
-            
-        </form>
-        </div>    
-</body>
+              <input type="radio" name="hm" value="h" /> Hombre
+              <input type="radio" name="hm" value="m" /> Mujer
+              <input type="radio" name="hm" value="o" /> Otro
+            </label>
+          </li>
+          <li>
+            <label for="mail"
+              >Mail:<input type="mail" name="mail" id="mail" size="45" required
+            /></label>
+          </li>
+          <li>
+            <label for="password"
+              >Contraseña:<input
+                type="password"
+                name="password"
+                id="password"
+                required
+            /></label>
+          </li>
+          <li>
+            <label
+              >Cumpleaños:<input
+                type="date"
+                name="nacimiento"
+                min="01-01-1940"
+                max="31-12-2003"
+            /></label>
+          </li>
+        </ul>
+
+        <div class="submit">
+          <button type="submit">Enviar</button>
+          <button type="reset" value="Borrar">Borrar</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
-
