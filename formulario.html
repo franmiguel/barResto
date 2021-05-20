@@ -1,84 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/formstyle.css" rel="stylesheet">
     <script src="js/validate.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="formulario">
-      <form
-        name="myForm"
-        action="/"
-        method="post"
-        method="GET"
-        class="formulario"
-        onsubmit="return validateForm()"
-      >
-        <ul>
-          <li>
-            <label for="nombre"
-              >Nombre:
-              <input type="text" name="nombre" id="nombre" size="40" required
-            /></label>
-          </li>
-          <li>
-            <label for="apellido"
-              >Apellido:
-              <input
-                type="text"
-                name="apellido"
-                id="apellido"
-                size="40"
-                required
-            /></label>
-          </li>
-          <li>
-            <label for="genero">
-              Género:
-
-              <input type="radio" name="hm" value="h" /> Hombre
-              <input type="radio" name="hm" value="m" /> Mujer
-              <input type="radio" name="hm" value="o" /> Otro
-            </label>
-          </li>
-          <li>
-            <label for="mail"
-              >Mail:<input type="mail" name="mail" id="mail" size="45" required
-            /></label>
-          </li>
-          <li>
-            <label for="password"
-              >Contraseña:<input
-                type="password"
-                name="password"
-                id="password"
-                required
-            /></label>
-          </li>
-          <li>
-            <label
-              >Cumpleaños:<input
-                type="date"
-                name="nacimiento"
-                min="01-01-1940"
-                max="31-12-2003"
-            /></label>
-          </li>
-        </ul>
-
-        <div class="submit">
-          <button type="submit">Enviar</button>
-          <button type="reset" value="Borrar">Borrar</button>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container-fluid">
+    <header id="burgerCompany">
+        <div class="row">
+            <div class="col-12">
+                <!--NAVBAR-->
+                <ul class="navbar">
+                    <li style="letter-spacing:2px; font-weight: 700;"><a href="#burgerCompany">Burger Company</a></li>
+                    <li><a href="#rowMenu">Menú</a></li>
+                    <li><a href="#promos">Promociones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="/formulario.html">Crear cuenta</a></li>
+                </ul>
+            </div>
         </div>
-      </form>
-    </div>
-  </body>
+    </header>        
+    <form class="formulario" name="myForm"
+    action="/"
+    method="GET"
+    onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Registrate</legend>
+            <div class="form-input">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" size="40" inputmode="text" autofocus required>
+            </div>
+            <div class="form-input">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" size="40"inputmode="text" required>
+            </div>
+            <div class="form-input">
+                <label for="genero">Género</label>           
+                <input type="radio" name="hm" value="h"required> Hombre
+                <input type="radio" name="hm" value="m"required> Mujer
+                <input type="radio" name="hm" value="o"required> No binario
+            </div>
+            <div class="form-input">
+                <label for="mail">Mail</label>
+                <input type="mail" name="mail" id="mail" size="45" inputmode="email"required>
+            </div>
+            <div class="form-input">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="form-input">
+                <label>Cumpleaños</label>
+                <input type="date" name="nacimiento" required>
+            </div>
+            <div class="form-input">
+                <button type="submit" value="Enviar">Enviar</button>
+                <button type="reset" value="Borrar">Borrar</button>
+            </div>
+        </fieldset>             
+        </form>
+    </div>   
+</body>
 </html>
